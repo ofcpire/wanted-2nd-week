@@ -1,6 +1,7 @@
 import React from 'react';
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import MarkdownPreview from '@uiw/react-markdown-preview';
 
 export default function IssueBody({ issueBody }: { issueBody: string }) {
-  return <ReactMarkdown className="p-5">{issueBody}</ReactMarkdown>;
+  console.log(typeof issueBody);
+  return <MarkdownPreview source={issueBody} className="p-5" />;
 }
