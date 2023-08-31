@@ -1,4 +1,5 @@
 import React from 'react';
+import dateParser from '../../lib/utils/dateParser';
 
 export default function IssueInfo({ issueData }: { issueData: IssueContentType }) {
   return (
@@ -10,11 +11,11 @@ export default function IssueInfo({ issueData }: { issueData: IssueContentType }
             #{issueData.number} {issueData.title}
           </h1>
           <span>
-            작성자:{issueData.user.login}, 작성일:{issueData.created_at}
+            작성자: {issueData.user.login}, 작성일: {dateParser(issueData.created_at)}
           </span>
         </div>
       </div>
-      <div>코멘트:{issueData.comments}</div>
+      <div className="min-w-max">코멘트:{issueData.comments}</div>
     </div>
   );
 }
