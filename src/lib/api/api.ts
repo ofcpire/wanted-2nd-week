@@ -1,10 +1,9 @@
 import api from './axiosInstance';
-import { setIssueList } from '../../redux/issueListSlice';
 
 const getIssueList = async (page: number) => {
   console.log(`now call ${page}page`);
   try {
-    return await api.get(`issues?filter=all&sort=comments&page=${page}`);
+    return await api.get(`issue?page=${page}`);
   } catch (err) {
     console.log(err);
     return Promise.reject(err);
@@ -13,7 +12,7 @@ const getIssueList = async (page: number) => {
 
 const getIssueContent = async (issueNumber: string | undefined) => {
   try {
-    return await api.get(`/issues/${issueNumber}`);
+    return await api.get(`/issue/${issueNumber}`);
   } catch (err) {
     console.log(err);
     return Promise.reject(err);
