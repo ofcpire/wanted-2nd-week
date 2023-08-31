@@ -3,7 +3,7 @@ import dateParser from '../../lib/utils/dateParser';
 
 export default function IssueInfo({ issueData }: { issueData: IssueContentType }) {
   return (
-    <div className="border-b-2 border-solid border-[lightgrey] p-7 flex justify-between items-center">
+    <div className="border-b-2 border-solid border-[lightgrey] p-5 flex justify-between items-center">
       <div className="flex">
         <img src={issueData.user.avatar_url} className="h-[50px] w-[50px]"></img>
         <div className="pl-3">
