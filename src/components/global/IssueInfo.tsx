@@ -2,16 +2,7 @@ import React from 'react';
 
 export default function IssueInfo({ issueData }: { issueData: IssueContentType }) {
   return (
-    <div
-      style={{
-        borderBottom: '1px solid black',
-        padding: '30px',
-        cursor: 'pointer',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-      }}
-    >
+    <div className="border-b border-solid border-black p-7 cursor-pointer flex justify-between items-center">
       <div>
         <div>
           #{issueData.number} {issueData.title}

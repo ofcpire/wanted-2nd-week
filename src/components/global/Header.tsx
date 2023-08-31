@@ -2,8 +2,6 @@ import React from 'react';
 
 export default function Header() {
   return (
-    <header style={{ border: '1px solid black', padding: '30px', textAlign: 'center' }}>
-      facebook / react
-    </header>
+    <header className="border border-black border-solid p-7 text-center">facebook / react</header>
   );
 }
