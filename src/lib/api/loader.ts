@@ -5,6 +5,7 @@ import { setIsLoading } from '../../redux/isLoadingSlice';
 
 const issueListPathLoader = async () => {
   if (store.getState().issueListSlice.issueList.length === 0) {
+    store.dispatch(setIsLoading(false));
     try {
       await getIssueList(1).then(response => {
         store.dispatch(setIssueList(response.data));
@@ -21,6 +22,7 @@ const issueListPathLoader = async () => {
 };
 
 const issueContentPathLoader = async (IssueNumber: string | undefined) => {
+  store.dispatch(setIsLoading(false));
   try {
     const response = await getIssueContent(IssueNumber);
     store.dispatch(setIsLoading(true));
