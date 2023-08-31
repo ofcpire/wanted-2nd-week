@@ -7,7 +7,6 @@ import Loading from './components/global/Loading';
 
 function Layout() {
   const isLoading = useSelector((state: RootState) => state.isLoadingSlice);
-  console.log(isLoading);
   return (
     <>
       <Header />
