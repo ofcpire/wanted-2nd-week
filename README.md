@@ -6,7 +6,8 @@ Github의 react 리포지토리에 등록된 issue를 목록과 상세 보기로
 
 ## 배포 주소
 
-[https://wanted-2nd-week-ofcpire.netlify.app/13991](https://wanted-2nd-week-ofcpire.netlify.app/13991)
+[https://wanted-2nd-week-ofcpire.netlify.app](https://wanted-2nd-week-ofcpire.netlify.app)
+
 배포된 주소에선 API로 aws api gateway를 이용합니다.
 
 ## 실행 방법
