@@ -1,5 +1,5 @@
 import axios from 'axios';
-const url = 'https://www.pre-onboarding-selection-task.shop';
+const url = 'https://api.github.com/repos/facebook/react';
 const authToken = process.env.REACT_APP_TOKEN;
 
 const api = axios.create({
