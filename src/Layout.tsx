@@ -11,7 +11,7 @@ function Layout() {
   return (
     <>
       <Header />
-      {isLoading ? <Outlet /> : <Loading />}
+      <section className="py-[84px]">{isLoading ? <Outlet /> : <Loading />}</section>
     </>
   );
 }
