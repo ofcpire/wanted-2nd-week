@@ -8,9 +8,11 @@ Github의 react 리포지토리에 등록된 issue를 목록과 상세 보기로
 
 [https://wanted-2nd-week-ofcpire.netlify.app](https://wanted-2nd-week-ofcpire.netlify.app)
 
-배포된 주소에선 API로 aws api gateway를 이용합니다.
+배포는 prod 브랜치에서 빌드합니다.
 
 ## 실행 방법
+
+main 브랜치를 사용합니다.
 
 ```
 git clone https://github.com/ofcpire/wanted-pre-onboarding-2nd-week-assignment.git
@@ -18,8 +20,6 @@ cd wanted-pre-onboarding-2nd-week-assignment
 npm install
 npm start
 ```
-
-환경 변수로 API URL 등록이 필요합니다.
 
 ## 프로젝트 구조
 
@@ -78,9 +78,10 @@ src
 - typescript
 - react-router-dom
 - tailwind css
+- redux toolkit
+- axios
 - eslint
 - prettier
-- axios
 
 ## 커밋 규칙
 
