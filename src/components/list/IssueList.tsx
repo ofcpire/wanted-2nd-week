@@ -26,10 +26,10 @@ export default function IssueList({ issueList }: { issueList: IssueContentType[]
   return (
     <section ref={scrollRef}>
       {issueList.map((issue, idx) => (
-        <>
-          <IssueItem issue={issue} key={issue.number} />
-          {(idx + 1) % 4 === 0 && <ListAd key={idx} />}
-        </>
+        <article key={issue.number}>
+          <IssueItem issue={issue} />
+          {(idx + 1) % 4 === 0 && <ListAd />}
+        </article>
       ))}
     </section>
   );
