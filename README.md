@@ -36,7 +36,9 @@ src
  ┃ ┗ list
  ┃ ┃ ┣ IssueItem.tsx
  ┃ ┃ ┣ IssueList.tsx
- ┃ ┃ ┗ ListAd.tsx
+ ┃ ┃ ┣ ListAd.tsx
+ ┃ ┃ ┗ LoadPageIndicator.tsx
+ ┣ hook
  ┣ lib
  ┃ ┣ api
  ┃ ┃ ┣ api.ts

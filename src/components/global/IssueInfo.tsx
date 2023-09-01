@@ -11,7 +11,13 @@ export default function IssueInfo({
   return (
     <div className="border-b-2 border-solid border-[lightgrey] p-3 flex justify-between items-center">
       <div className="flex">
-        {needImg && <img src={issueData.user.avatar_url} className="h-[50px] w-[50px] mr-3"></img>}
+        {needImg && (
+          <img
+            src={issueData.user.avatar_url}
+            alt="user-profile-image"
+            className="h-[50px] w-[50px] mr-3"
+          ></img>
+        )}
         <div>
           <h1 className="font-semibold text-md">
             #{issueData.number} {issueData.title}
