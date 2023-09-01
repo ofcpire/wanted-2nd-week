@@ -9,7 +9,7 @@ export default function IssueItem({ issue }: { issue: IssueContentType }) {
   };
   return (
     <article onClick={navToContentPage} className="cursor-pointer">
-      <IssueInfo issueData={issue} />
+      <IssueInfo issueData={issue} needImg={false} />
     </article>
   );
 }
