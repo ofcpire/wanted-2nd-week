@@ -8,8 +8,8 @@ export default function IssueItem({ issue }: { issue: IssueContentType }) {
     navigate(`/${issue.number}`);
   };
   return (
-    <article onClick={navToContentPage} className="cursor-pointer">
+    <div onClick={navToContentPage} className="cursor-pointer">
       <IssueInfo issueData={issue} needImg={false} />
-    </article>
+    </div>
   );
 }
